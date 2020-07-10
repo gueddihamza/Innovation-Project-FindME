@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.CreateGroupInviteCode"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:padding="5dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add_group_icon"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_group"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/brandon_grotesque_black"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_group_info"
+            android:textSize="18sp"
+            android:fontFamily="@font/brandon_grotesque_bold_italic"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemCount="8"
+            app:itemWidth="38dp"
+            app:itemHeight="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:lineColor="@color/colorAccent"
+            android:itemBackground="@color/lightweight"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            android:cursorVisible="true"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemRadius="5dp"/>
+
+
+        <Button
+            android:onClick="callJoinGroupSuccess"
+            android:id="@+id/join_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

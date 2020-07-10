@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.github.ivbaranov.mli.MaterialLetterIcon
+        android:id="@+id/letter_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/letter_icon"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:text="Group Name :"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/group_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/letter_icon"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:text="Description :"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/group_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/letter_icon"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:text="Created By :"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:onClick="callNextActions"
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/group_owner"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/join_grp"
+        android:background="@color/card1"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <com.github.ivbaranov.mli.MaterialLetterIcon
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_image"/>
+
+
+    <TextView
+        android:id="@+id/username_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-4dp"
+        android:layout_toRightOf="@id/profile_image"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:includeFontPadding="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/show_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_msg"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/background_left"
+        android:layout_toRightOf="@id/profile_image"
+        android:fontFamily="@font/brandon_grotesque_light"
+        android:includeFontPadding="false"
+        android:textSize="18sp" />
+
+</RelativeLayout>

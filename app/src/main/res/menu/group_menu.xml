@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="none">
+
+
+        <item
+            android:id="@+id/nav_search_users"
+            android:title="@string/search_all_users"
+            />
+        <item
+            android:id="@+id/nav_add_members"
+            android:title="@string/add_members" />
+
+    <item
+        android:id="@+id/geolocate_members"
+        android:title="@string/geolocation" />
+
+        <item
+            android:id="@+id/kick_members"
+            android:title="@string/kick_members"
+           />
+
+        <item
+            android:id="@+id/leave_group"
+            android:title="Leave Group"
+            />
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home_2"
+            />
+
+
+</group>
+
+
+</menu>

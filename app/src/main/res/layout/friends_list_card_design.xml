@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+    
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+        
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/ms_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile_icon"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/ms_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ms_image"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/brandon_grotesque_bold_italic"/>
+
+        <TextView
+            android:id="@+id/ms_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/created_by"
+            android:layout_below="@id/ms_fullname"
+            android:layout_toRightOf="@id/ms_image"
+            android:padding="10dp"
+            android:fontFamily="@font/brandon_grotesque_black"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

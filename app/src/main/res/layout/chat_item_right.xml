@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+        
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/profile_image"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/username_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toLeftOf="@id/profile_image"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/brandon_grotesque_black"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_1"
+            android:text="Hello"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_msg"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/color_1"
+            android:layout_marginEnd="57dp"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@id/profile_image"
+            android:background="@drawable/background_left"
+            android:fontFamily="@font/brandon_grotesque_light"
+            android:includeFontPadding="false"
+            android:text="Hello"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+        
+    </RelativeLayout>

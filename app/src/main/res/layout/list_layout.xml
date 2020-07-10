@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.github.ivbaranov.mli.MaterialLetterIcon
+        android:id="@+id/letter_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/fullname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/letter_icon"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:text="@string/enter_fullname"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullname_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/letter_icon"
+        android:fontFamily="@font/brandon_grotesque_light"
+        android:text="@string/username"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+</RelativeLayout>

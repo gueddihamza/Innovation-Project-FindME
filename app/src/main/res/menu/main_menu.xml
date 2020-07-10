@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/home_icon"/>
+        <item
+            android:id="@+id/nav_search"
+            android:title="@string/search"
+            android:icon="@drawable/search_icon"/>
+        <item
+            android:id="@+id/nav_open_geolocation_map"
+            android:title="@string/geolocation_map"
+            android:icon="@drawable/location_icon"/>
+        <item
+            android:id="@+id/nav_friends_list"
+            android:title="@string/friends_list"
+            android:icon="@drawable/friends"/>
+
+
+
+    </group>
+
+    <item android:title="@string/profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="@string/profile"
+                    android:icon="@drawable/profile_icon"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="@string/logout"
+                    android:icon="@drawable/logout_icon"/>
+
+
+
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="@string/groups">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_all_groups"
+                    android:title="@string/all_groups"
+                    android:icon="@drawable/group_room_icon"/>
+
+                <item
+                    android:id="@+id/nav_class_groups"
+                    android:title="@string/class_groups"
+                    android:icon="@drawable/class_group"/>
+                <item
+                    android:id="@+id/nav_club_groups"
+                    android:title="@string/club_groups"
+                    android:icon="@drawable/club_group"/>
+
+                <item
+                    android:id="@+id/nav_custom_groups"
+                    android:title="@string/custom_groups"
+                    android:icon="@drawable/custom_group_icon"/>
+
+
+
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

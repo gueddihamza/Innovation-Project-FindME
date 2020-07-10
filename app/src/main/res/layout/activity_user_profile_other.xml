@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.UserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <com.github.ivbaranov.mli.MaterialLetterIcon
+                android:id="@+id/profile_image_other"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true" />
+
+
+            <TextView
+                android:id="@+id/fullname_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image_other"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/brandon_grotesque_black"
+                android:includeFontPadding="false"
+                android:text="Hamza Gueddi"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/username_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_other"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image_other"
+                android:fontFamily="@font/brandon_grotesque_light"
+                android:includeFontPadding="false"
+                android:text="hamzagueddi"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/status_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_other"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image_other"
+                android:fontFamily="@font/brandon_grotesque_light"
+                android:includeFontPadding="false"
+                android:text="hamzagueddi"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/phonenumber_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_other"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image_other"
+                android:fontFamily="@font/brandon_grotesque_light"
+                android:includeFontPadding="false"
+                android:text="hamzagueddi"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-85dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/friend_icon" />
+
+                    <TextView
+                        android:id="@+id/friends_total_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/brandon_grotesque_black"
+                        android:includeFontPadding="false"
+                        android:text="20"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/friends_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/friends_total_2"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/brandon_grotesque_light"
+                        android:includeFontPadding="false"
+                        android:text="@string/number_of_friends"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/join_icon" />
+
+                    <TextView
+                        android:id="@+id/groups_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/brandon_grotesque_black"
+                        android:includeFontPadding="false"
+                        android:text="5"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/groups_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/groups_total"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/brandon_grotesque_light"
+                        android:includeFontPadding="false"
+                        android:text="@string/number_of_groups"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/mainClickButton"
+                    android:onClick="mainClickButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/color_7"
+                    android:fontFamily="@font/brandon_grotesque_black"
+                    android:text=""
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/rejectRequestButton"
+                    android:onClick="rejectRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/color_2"
+                    android:fontFamily="@font/brandon_grotesque_black"
+                    android:text="@string/reject_request"
+                    android:visibility="gone"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/go_to_main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/brandon_grotesque_black"
+                android:text="@string/go_to_main_menu" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

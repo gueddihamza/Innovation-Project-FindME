@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.FriendChat"
+    android:background="#e6e6e6">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card1"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            app:popupTheme="@color/black">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:padding="5dp"
+                android:id="@+id/back_btn"/>
+
+
+
+            <com.github.ivbaranov.mli.MaterialLetterIcon
+                android:layout_marginLeft="30dp"
+                android:id="@+id/group_type_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/groupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/brandon_grotesque_black"
+                />
+
+            <!--    <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/menu_icon"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginLeft="15dp"/>
+                    -->
+
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar_layout"
+        android:layout_above="@+id/bottom" />
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:backgroundTint="@color/material_on_background_emphasis_medium"
+            android:hint="@string/type_a_message"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:onClick="sendMSG"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/send_msg_icon"
+            android:backgroundTint="@color/card1"
+            android:id="@+id/btn_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

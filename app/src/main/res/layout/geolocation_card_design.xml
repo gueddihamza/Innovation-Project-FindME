@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="8dp"
+    android:layout_margin="12sp">
+
+    <RelativeLayout
+        android:id="@+id/background_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@drawable/card_4">
+
+
+        <TextView
+            android:id="@+id/geolocation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geolocation_map"
+            android:textSize="20sp"
+            android:fontFamily="@font/brandon_grotesque_bold_italic"/>
+        
+        <ImageView
+            android:id="@+id/geolocation_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/location_icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

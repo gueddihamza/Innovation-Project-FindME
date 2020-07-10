@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/brandon_grotesque_black"
+            android:text="@string/manage_friends"
+            android:textSize="28sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/activity_name"
+            android:queryHint="@string/search_here"
+            android:iconifiedByDefault="false"
+            android:layoutDirection="rtl"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/request_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/friend_requests"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:fontFamily="@font/brandon_grotesque_black" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friends_rcy"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/friend_title"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/friends"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:fontFamily="@font/brandon_grotesque_black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DCDEE3" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.CustomGroups"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:padding="5dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_groups"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/brandon_grotesque_black"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selection"
+            android:textSize="18sp"
+            android:fontFamily="@font/brandon_grotesque_bold_italic"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/lightweight"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/add_group"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/add_group_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/add_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_group_selection"
+                android:textSize="25sp"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:layout_toRightOf="@id/add_group"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/ButtonCreate"
+                android:onClick="callCreateGroupScreen"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/lightweight"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/join_group_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/join_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:tint="@color/black"/>
+
+            <TextView
+                android:id="@+id/join_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/join_group"
+                android:textSize="25sp"
+                android:fontFamily="@font/brandon_grotesque_bold_italic"
+                android:layout_toRightOf="@id/join_group_icon"
+                android:layout_centerVertical="true"
+                />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:id="@+id/ButtonJoin"
+                android:onClick="callJoinGroupScreen"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

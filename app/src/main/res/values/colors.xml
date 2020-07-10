@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFE400</color>
+    <color name="MenuColor">#FECE2F</color>
+    <color name="colorPrimaryDark">#FFA600</color>
+    <color name="colorAccent">#272727</color>
+
+    <color name="lightweight">#F5F5F5</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+    <color name="home_background">#F2F5F8</color>
+    <color name="banner_background">#F1E9CE</color>
+    <color name="banner_background_light">#56F1E9CE</color>
+    
+    <color name="card1">#D4CBE5</color>
+    <color name="card2">#7ADCCF</color>
+    <color name="card3">#F7C59F</color>
+    <color name="card4">#B8D7F5</color>
+    
+    <color name="color_1">#DB4437</color>
+    <color name="color_2">#E91E63</color>
+    <color name="color_3">#FF5722</color>
+    <color name="color_4">#EF6C00</color>
+    <color name="color_5">#689F38</color>
+    <color name="color_6">#0097A7</color>
+    <color name="color_7">#4285F4</color>
+    <color name="color_8">#039BE5</color>
+    <color name="color_9">#3F51F5</color>
+    <color name="color_10">#673AB7</color>
+    <color name="color_11">#757575</color>
+</resources>
